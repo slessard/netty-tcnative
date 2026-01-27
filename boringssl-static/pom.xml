@@ -147,7 +147,8 @@
               </execution>
             </executions>
             <configuration>
-              <url>https://commondatastorage.googleapis.com/chromium-boringssl-fips/boringssl-${boringsslBranch}.tar.xz</url>
+<!--              <url>https://commondatastorage.googleapis.com/chromium-boringssl-fips/boringssl-${boringsslBranch}.tar.xz</url>-->
+              <url>https://boringssl.googlesource.com/boringssl/+archive/${boringsslBranch}.tar.gz</url>
               <unpack>true</unpack>
               <outputDirectory>${project.build.directory}/boringssl-${boringsslBranch}</outputDirectory>
             </configuration>
